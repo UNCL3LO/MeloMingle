@@ -1,0 +1,175 @@
+#root {
+text-align: center;
+}
+body {
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+  background-color: rgb(54, 205, 135); /* Set the background color to cover the whole page */
+}
+.splashContainer{
+  justify-content: space-between; 
+  height: 100vh;
+}
+.splashScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(54, 205, 135);
+  color: azure;
+  top: 0;
+  left: 0;
+
+  width: 200vh; /* Set width to cover the entire viewport */
+  height: 90vh; /* Set height to cover the entire viewport */
+  flex-direction: row; /* Ensure the content stacks vertically */
+  justify-content: center; 
+}
+
+
+.splashScreen img {
+
+  width: 200px;
+
+  border-radius:200px;
+}
+.splash-footer{
+  background-color: rgb(67, 67, 67);
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  height: 10vh; /* Set the height of the footer */
+  width: 200vh;
+}
+.PhoneRegistration{
+  display: flex;
+  background-color: black;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center; 
+  transform: translate(250%, 0%);
+  top: 50%;
+  left: 50%;
+  padding: 10px;
+
+  border-radius: 10px;
+  height: 70vh;
+  box-shadow: #0d0e0b;
+
+
+}
+.MusicContainer{
+  display: flex;
+}
+.Player{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(235, 231, 223);
+  top: 0;
+
+  right: 0;
+  position: fixed;
+
+  height: 100vh;
+  width: 100vh;
+  padding-bottom: 10px;
+  align-items: center;
+  margin-bottom:initial; /* Push the Playing div to the top by using auto margin */
+  justify-content: space-between; /* Space items evenly along the vertical axis */
+
+}
+.Player:hover{
+  border-color: black;
+  background-color:rgb(54, 205, 135);
+}
+.Player img {
+  border-radius: 200px;
+}
+.Playing{
+margin-bottom: auto; /* Push the Playing div to the top by using auto margin */
+display: flex;
+justify-content: space-between;
+
+align-items: center;
+}
+.Friends{
+  background-color: antiquewhite;
+  display: flex;
+  width: 70vh;
+  height: 100vh;
+  overflow-y: auto; /* Enable vertical scrolling */
+  
+}
+
+.Catalog{
+  display:block;
+
+  background-color: black;
+  left: 0;
+  width: 30vh;
+  height: 100vh;
+  padding: 10px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  justify-content:flex-start;
+
+}
+.PlaylistTitle {
+  position: fixed;
+  top: 0;
+  width: 30vh;
+  z-index: 0;
+  background-color: #0000009d;
+  color: #bcff64;
+}
+.Catalog button{
+  width:30vh;
+  height: 40px;
+  margin-bottom: 10px;
+  color: rgb(246, 248, 250);
+  background-color: rgba(249, 251, 253, 0.116);
+  border-radius: 0px;
+  border-color: #08080858;
+margin: 0px;
+  display: inline;
+  justify-content:right;
+}
+
+.Catalog button:hover {
+  border-color:rgb(54, 205, 135);
+  background-color: rgba(44, 43, 43, 0);
+}
+ 
+  .Catalog button:after {
+    border-color: #bcff64;
+    background-color: rgb(25, 194, 25);
+}
+.Catalog::-webkit-scrollbar {
+  width: 0px;
+}
+.FriendDetails{
+  border-color: #0e1501;
+  height: 70px;
+
+ 
+}
+.FriendDetails:hover{
+  border-color: #ed2907;
+  background-color: aquamarine;
+  border-radius: 10px;
+
+ 
+}
+.FriendDetails img{
+  width: 50px;
+  border-radius: 50px;
+  margin: 10px;
+
+}
+.FriendTitles{
+  display: flex;
+  margin: 20px;
+  background-color: rgb(221, 219, 214);
+  border-radius: 10px;
+  width: 55vh;
+  margin-right: 10px;
+  justify-items: center;
+}
